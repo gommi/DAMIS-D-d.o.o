@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "ChakraPetch";
+  src: url("/fonts/ChakraPetch-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "ChakraPetch-Light";
+  src: url("/fonts/ChakraPetch-Light.ttf");
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+.nav-link {
+  font-size: 18px;
+  font-family: "ChakraPetch", sans-serif;
+}
+
+.navItem{
+  list-style: none;
+  padding-left: 40px;
+}
+.navLink img{
+  width: 50px;
+  height: 30px;
+  box-shadow: 1px 2px 3px 0px #888888;
+}
+
+
+#impressum_containers {
+  margin-top: 100px;
+}
+
+.impressum_title {
+  font-family: "ChakraPetch", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.impressum_info {
+  font-family: "ChakraPetch", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.impressum_text {
+  font-size: 18px;
+  font-family: "ChakraPetch-Light", sans-serif;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .nav-item {
+    margin-left: 0px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-item {
+    margin-left: 0px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .nav-item {
+    margin-left: 0px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #impressum_containers {
+    margin-top: 90px;
+  }
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #impressum_containers {
+    margin-top: 50px;
+  }
+  .impressum_title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .impressum_info {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .impressum_title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .impressum_info {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  #impressum_containers {
+    margin-top: 50px;
+  }
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+}

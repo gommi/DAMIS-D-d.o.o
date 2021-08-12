@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>DAMIS - B d.o.o. Kontakt</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/kontakt.css" />
+    <!--mapbox CDN-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      .marker {
+        background-image: url("img/map_pin.png");
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .mapboxgl-popup {
+        max-width: 200px;
+      }
+
+      .mapboxgl-popup-content {
+        text-align: center;
+        font-family: "Redwing-Medium";
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #fff; box-shadow: 5px 5px 10px #aaaaaa"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="../img/big_logo.png"
+            alt="DAMIS - B d.o.o."
+            class="d-none d-md-block" />
+          <img
+            src="../img/logo.png"
+            class="d-md-none"
+            height="90"
+            alt="DAMIS - B d.o.o."
+        /></a>
+        <svg
+          class="ham hamRotate ham1 ml-auto navbar-toggler"
+          viewBox="0 0 100 100"
+          width="80"
+          onclick="this.classList.toggle('active')"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <path
+            class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+          />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path
+            class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+          />
+        </svg>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul id="top-menu" class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html#banner"
+                >Startseite
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#uber_uns">Über uns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#services">Dienstleistungen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#projekte_cont">Projekte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#kontakt">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="werdegang.html">Karriere</a>
+            </li>
+          </ul>
+          <li class="navItem">
+            <a class="navLink" href="sr/kontakt.html"><img src="img/serbia.png"></a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row" id="kontakt">
+        <div class="col-12 col-md-6 align-self-center">
+          <p class="kontakt_title">Kontakt</p>
+          <p class="kontakt_subtitle pt-5">
+            DAMIS - B, gradbene storitve, d.o.o.
+          </p>
+          <p class="kontakt_info">Trg mladosti 6</p>
+          <p class="kontakt_info">3320 Velenje</p>
+          <br />
+          <p class="kontakt_text">Telefonnummer: +386 31 642 127</p>
+          <p class="kontakt_text">E-mail: damisbmont76@gmail.com</p>
+          <br />
+          <p class="kontakt_subtitle pt-3">
+            Folgen Sie uns auch auf unseren Social Media Kanälen:
+          </p>
+          <p class="kontakt_text">
+            Facebook:
+            <a href="https://www.facebook.com/Damis-B-doo-111108960595476/"
+              >DAMIS - B d.o.o. Elektromontaza</a
+            >
+          </p>
+          <p class="kontakt_text">
+            Instagram: <a href="#">www.instagram.com</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-6 align-self-center">
+          <p class="kontakt_subtitle pt-5 pb-4">
+            Interaktive Geo-Lokalisierung:
+          </p>
+          <div
+            id="map"
+            class="mb-5 mb-md-0"
+            style="width: auto; height: 300px"
+          ></div>
+          <script src="js/mapbox.js"></script>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="conatiner-fluid" style="background-color: #e2192b">
+      <div class="container">
+        <div class="row" style="height: 180px">
+          <div
+            class="col-12 col-md-6 text-center d-flex justify-content-center align-items-center pt-3 pb-3 pt-lg-0 pb-lg-0"
+          >
+            <a
+              href="kontakt.html"
+              style="
+                color: #fff;
+                text-decoration: none;
+                font-family: ChakraPetch, sans-serif;
+                font-size: 24px;
+              "
+              ><i class="far fa-comment"></i> Kontakt</a
+            >
+          </div>
+          <div
+            class="col-12 col-md-6 text-center d-flex justify-content-center align-items-center pt-3 pb-3 pt-lg-0 pb-lg-0"
+          >
+            <a
+              href="impressum.html"
+              style="
+                color: #fff;
+                text-decoration: none;
+                font-family: ChakraPetch, sans-serif;
+                font-size: 24px;
+              "
+              ><i class="far fa-file"></i> Impressum & Nutzungsbedingungen</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/navbar_active.js"></script>
+  </body>
+</html>

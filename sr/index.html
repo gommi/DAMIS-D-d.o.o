@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>DAMIS - B d.o.o.</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!--Oxygen CDN-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="background-color: #fff"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="../img/big_logo.png"
+            alt="DAMIS - B d.o.o."
+            class="d-none d-md-block" />
+          <img
+            src="../img/logo.png"
+            class="d-md-none"
+            height="90"
+            alt="DAMIS - B d.o.o."
+        /></a>
+        <svg
+          class="ham hamRotate ham1 ml-auto navbar-toggler"
+          viewBox="0 0 100 100"
+          width="80"
+          onclick="this.classList.toggle('active')"
+          role="img"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <path
+            class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+          />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path
+            class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+          />
+        </svg>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul id="top-menu" class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#banner"
+                >Početna
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#uber_uns">O nama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Usluge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projekte_cont">Projekti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="werdegang.html">Karijera</a>
+            </li>
+          </ul>
+          <li class="navItem">
+            <a class="navLink" href="../index.html"><img src="../img/germany.png"></a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <!--Slider-->
+    <div id="banner" class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active"
+                style="background-image: url(../img/cover_cable.jpg)"
+              ></div>
+              <div
+                class="carousel-item"
+                style="background-image: url(../img/cover_car.jpg)"
+              ></div>
+              <div
+                class="carousel-item"
+                style="background-image: url(../img/cover_dizalica.jpg)"
+              ></div>
+              <div
+                class="red-content d-flex justify-content-center flex-column"
+              >
+                <p
+                  class="banner_title pt-md-5 text-center text-sm-left align-self-center align-self-sm-start"
+                >
+                  DAMIS - B d.o.o. <br />
+                  <span>Elektromontaza</span>
+                </p>
+                <!--
+                <p class="banner_text p-0 pb-5 mb-5 d-none d-md-block">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat leo risus pulvinar volutpat.
+                </p>-->
+                <a
+                  href="#uber_uns"
+                  id="animation_btn"
+                  class="btn mb-5 align-self-center align-self-sm-start"
+                  >Više</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!--About us-->
+    <div
+      id="uber_uns"
+      class="container d-flex justify-content-center align-items-center"
+    >
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-6 col-lg-5 mb-5 mb-md-0 order-2 order-md-1">
+          <div class="col-lg-12 d-flex">
+            <div class="col-lg-6 d-flex justify-content-end p-0">
+              <div class="uber_uns_img_one"></div>
+            </div>
+            <div class="col-lg-6 p-0 pt-2 pl-2">
+              <div class="uber_uns_img_yellow_logo"></div>
+            </div>
+          </div>
+          <div class="col-lg-12 d-flex">
+            <div class="col-lg-6 d-flex justify-content-end p-0">
+              <div class="uber_uns_img_red_logo"></div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-start p-0 pt-2 pl-2">
+              <div class="uber_uns_img_two"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-7 order-1 order-md-2">
+          <p
+            class="yellow_decoration text-md-right mt-3 pr-2 pl-3 pl-md-0 mt-sm-5 mt-md-0"
+          >
+            O <span>nama</span>
+          </p>
+          <p class="uber_uns_subtitle text-md-right pr-2 pl-3 pl-md-0">
+            Firma DAMIS-B-d.o.o. osnovana je 2020.godine u 100% privatnom vlasništvu.
+          </p>
+          <hr class="shine" />
+          <p class="uber_uns_text text-md-right pr-2 pl-3 pl-md-0">
+            I svoj rad je započela sa svega 5  zaposlenih.
+U svojoj razvojnoj putanji ,zahvaljujući svojim zalaganjem i odgovornim pristupom poslu u kratkom periodu razvila se u firmu koja trenutno zapošljava 20 radnika.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Dienstleistungen-->
+    <div
+      id="services"
+      class="container d-flex justify-content-center flex-column"
+    >
+      <div class="row">
+        <div class="col-12">
+          <p class="red_decoration text-md-right pr-2 pl-3 pl-md-0">
+            Usluge
+          </p>
+          <p class="dienstleistungen_text text-md-right pr-2 pl-3 pl-md-0">
+            Vrste instalacija: elektroenergetske, gromobranske, signalne, telekomunikacione.
+            <br>
+           Usluge koje nudimo:
+          </p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div
+          class="col-12 col-md-4 mt-3 mb-3 mt-md-5 mb-md-5 d-flex justify-content-center justify-content-md-end"
+        >
+          <div class="card" style="width: 18rem; border: none">
+            <img
+              class="card-img-top hexagon_usluga align-self-center"
+              src="../img/montaza.png"
+              alt="Dienstleistungen"
+            />
+            <div class="card-body">
+              <p id="card-title" class="card-title text-center">
+                Elektromontažni radovi
+              </p>
+              <p class="card-text text-center">
+                U stambenim objektima, poslovnim prostorima, industrijii gradilištima.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-4 mt-3 mb-3 mt-md-5 mb-md-5 d-flex justify-content-center"
+        >
+          <div class="card" style="width: 18rem; border: none">
+            <img
+              class="card-img-top hexagon_usluga align-self-center"
+              src="../img/led.png"
+              alt="Dienstleistungen"
+            />
+            <div class="card-body">
+              <p id="card-title-two" class="card-title text-center">
+                Led rasvjeta
+              </p>
+              <p class="card-text text-center">
+                U stambenim objektima, poslovnim prostorima, industrijii gradilištima.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-4 mt-3 mb-3 mt-md-5 mb-md-5 d-flex justify-content-center justify-content-md-start"
+        >
+          <div class="card" style="width: 18rem; border: none">
+            <img
+              class="card-img-top hexagon_usluga align-self-center"
+              src="../img/instalacija.png"
+              alt="Dienstleistungen"
+            />
+            <div class="card-body">
+              <p id="card-title-three" class="card-title text-center">
+                Električne instalacije
+              </p>
+              <p class="card-text text-center">
+                U stambenim objektima, poslovnim prostorima, industrijii gradilištima.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="background-color: #bcbcbc">
+      <div id="warum" class="container d-flex align-items-center">
+        <div class="row pt-5 pb-5 pt-lg-5 pb-lg-5">
+          <div class="col-lg-5">
+            <p class="title_content" style="padding-left: 2px">
+              Zašto izabrati nas?
+            </p>
+            <p class="text_content" style="padding-left: 2px">
+              Imamo dugogodišnje iskustvo na projektima sa inostranim kupcima. <br> To je jedan od dokaza našeg kvalitetnog poslovanja.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="../img/truck_time.png"
+                  alt=""
+                  width="100"
+                  height="100"
+                />
+                <h5 class="title_content">Dolazimo na vrijeme</h5>
+              </div>
+              <div class="col-md-6">
+                <img src="../img/tool.png" alt="" width="100" height="100" />
+                <h5 class="title_content">Profesionalna oprema</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="../img/eye.png" alt="" width="100" height="100" />
+                <h5 class="title_content">Odličan osjećaj za detalje</h5>
+              </div>
+              <div class="col-md-6">
+                <img src="../img/star.png" alt="" width="100" height="100" />
+                <h5 class="title_content">Profesionalni pristup</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Unsere Partner, unsere Projekte und Kontakt section-->
+    <div id="bg_partner" class="container-fluid">
+      
+      <!--Unsere Projekte-->
+      <div
+        id="projekte_cont"
+        class="container pt-5 d-flex justify-content-center flex-column"
+      >
+        <div class="row">
+          <div class="col-12">
+            <p class="red_decoration text-md-right pr-2">
+              Naši <span>Projekti</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="title_project_content text-md-right pr-2">
+              Povoljne cijene usluga i posao odrađen ni visokom nivou rezultiralo je time da sarađujemo sa više investitora.
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+          <div class="projekte">
+            <div
+              class="overlay_two d-flex flex-column align-items-center justify-content-center p-0"
+            >
+              <p class="title_btn text-center m-0" style="line-height: 50px">
+                SANS
+              </p>
+              <p
+                class="title_btn text-center m-0 pt-3 pl-2 pr-2"
+                style="font-size: 18px; line-height: 24px"
+              >
+                Geselschaft fur sisteme Anlagen und Netzbau GmbH
+              </p>
+            </div>
+            <div class="cont">
+              <img
+                class="img-responsive"
+                src="../img/erstes_projekt.png"
+                alt="Erstes Projekt"
+              />
+            </div>
+          </div>
+          <div class="projekte mt-md-0 p-0 mt-4 mt-md-0">
+            <div
+              class="overlay_two d-flex flex-column align-items-center justify-content-center p-0"
+            >
+              <p class="title_btn text-center m-0" style="line-height: 50px">
+                HEK
+              </p>
+              <p
+                class="title_btn text-center m-0 pt-2 pr-2 pl-2"
+                style="font-size: 16px; line-height: 24px"
+              >
+                Haustechnik GmbH Gross Gerau
+              </p>
+            </div>
+            <div class="cont">
+              <img
+                class="img-responsive"
+                src="../img/zweites_projekt.png"
+                alt="Zweites Projekt"
+              />
+            </div>
+          </div>
+          <div class="projekte mt-md-0 p-0 mt-4 mt-md-0">
+            <div
+              class="overlay_two d-flex flex-column align-items-center justify-content-center p-0"
+            >
+              <p class="title_btn text-center m-0" style="line-height: 50px">
+                Globe
+              </p>
+              
+              <p
+                class="title_btn text-center m-0 pt-2 pl-2 pr-2"
+                style="font-size: 16px; line-height: 24px"
+              >
+                Tower-Amazon-Frankfurt
+              </p>
+            </div>
+            <div class="cont">
+              <img
+                class="img-responsive"
+                src="../img/drittes_projekt.png"
+                alt="Drittes Projekt"
+              />
+            </div>
+          </div>
+        </div>
+        <!--Secund row-->
+        <div class="row d-flex justify-content-center align-items-center mb-5">
+          <div class="projekte mt-md-0 p-0 mt-4 mt-md-0">
+            <div
+              class="overlay_two d-flex flex-column align-items-center justify-content-center p-0"
+            >
+              <p class="title_btn text-center m-0" style="line-height: 50px">
+                Kellner
+              </p>
+              <p
+                class="title_btn text-center m-0 pt-2 pr-2 pl-2"
+                style="font-size: 16px; line-height: 24px"
+              >
+                Technik Schwabenheim
+              </p>
+            </div>
+            <div class="cont">
+              <img
+                class="img-responsive"
+                src="../img/viertes_projekt.png"
+                alt="Viertes Projekt"
+              />
+            </div>
+          </div>
+          <div class="projekte mt-md-0 p-0 mt-4 mt-md-0">
+            <div
+              class="overlay_two d-flex flex-column align-items-center justify-content-center p-0"
+            >
+              <p class="title_btn text-center m-0" style="line-height: 50px">
+                TKS
+              </p>
+              <p
+                class="title_btn text-center m-0 pt-2 pr-2 pl-2"
+                style="font-size: 16px; line-height: 24px"
+              >
+                Connect GmbH Dreieich
+              </p>
+            </div>
+            <div class="cont">
+              <img
+                class="img-responsive"
+                src="../img/fünftes_projekt.png"
+                alt="Fünftes Projekt"
+              />
+            </div>
+          </div>
+          <div class="projekte mt-md-0 p-0 mt-4 mt-md-0">
+            <div
+              class="overlay_two d-flex flex-column align-items-center justify-content-center p-0"
+            >
+              <p class="title_btn text-center m-0" style="line-height: 50px">
+                Herz
+              </p>
+              <p
+                class="title_btn text-center m-0 pt-2 pr-2 pl-2"
+                style="font-size: 16px; line-height: 24px"
+              >
+                Impuls Elektrotechnik-Eschborn
+              </p>
+            </div>
+            <div class="cont">
+              <img
+                class="img-responsive"
+                src="../img/sechstes_projekt.png"
+                alt="Sechstes Projekt"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Kontakt-->
+      <div
+        id="kontakt"
+        class="container d-flex justify-content-center flex-column"
+      >
+        <div class="row">
+          <div class="col-12">
+            <p class="yellow_decoration p-0" style="padding-left: 2px">
+              Kontaktirajte <span>nas</span>
+            </p>
+          </div>
+
+          <div class="col-md-12">
+            <p class="title_content" style="padding-left: 2px">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div
+              class="row d-flex justify-content-center align-items-center mt-5 mb-md-5"
+            >
+              <div
+                class="col-12 col-md-4 d-flex justify-content-center align-items-center flex-column"
+              >
+                <img src="../img/hexagon_pin.png" alt="Location" />
+                <p class="text_content pt-3">Trg mladosti 6</p>
+                <p class="text_content">3320 Velenje</p>
+              </div>
+              <div
+                class="col-12 col-md-4 d-flex justify-content-center align-items-center flex-column p-3 p-md-0"
+              >
+                <img src="../img/hexagon_message.png" alt="E-mail" />
+                <p class="text_content pt-3">damisbmont76@gmail.com</p>
+              </div>
+
+              <div
+                class="col-12 col-md-4 d-flex justify-content-center align-items-center flex-column p-3 p-md-0"
+              >
+                <img src="../img/hexagon_tel.png" alt="Telephoned" />
+                <p class="text_content pt-3">+386 31 642 127</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Form-->
+        <div class="row d-flex justify-content-center align-items-start pb-5">
+          <form method="POST" class="needs-validation container-fluid" novalidate onSubmit="return false;">
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="ime">Ime:*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ime"
+                  placeholder="Ime"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="prezime">Prezime:*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="prezime"
+                  placeholder="Prezime"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="email">E-mail:*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="firma">Ime kompanije:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firma"
+                  placeholder="Ime kompanije"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="adresa">Adresa:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="adresa"
+                  placeholder="Adresa"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="telefon">Broj telefona:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="telefon
+                  placeholder="Broje telefona"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check p-0">
+                <label for="poruka">Poruka:</label>
+                <textarea
+                  class="form-control"
+                  id="poruka"
+                  placeholder="Poruka"
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+            <button class="btn animation_btn_two" type="submit">
+              Pošalji
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="conatiner-fluid" style="background-color: #e2192b">
+      <div class="container">
+        <div class="row" style="height: 180px">
+          <div
+            class="col-12 col-md-6 text-center d-flex justify-content-center align-items-center pt-3 pb-3 pt-lg-0 pb-lg-0"
+          >
+            <a
+              href="kontakt.html"
+              style="
+                color: #fff;
+                text-decoration: none;
+                font-family: ChakraPetch, sans-serif;
+                font-size: 24px;
+              "
+              ><i class="far fa-comment"></i> Kontakt</a
+            >
+          </div>
+          <div
+            class="col-12 col-md-6 text-center d-flex justify-content-center align-items-center pt-3 pb-3 pt-lg-0 pb-lg-0"
+          >
+            <a
+              href="impressum.html"
+              style="
+                color: #fff;
+                text-decoration: none;
+                font-family: ChakraPetch, sans-serif;
+                font-size: 24px;
+              "
+              ><i class="far fa-file"></i> Impresum i uslovi korišćenja</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/navbar_active.js"></script>
+    <script src="../js/form_validation.js"></script>
+  </body>
+</html>

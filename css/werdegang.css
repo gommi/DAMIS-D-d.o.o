@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "ChakraPetch";
+  src: url("/fonts/ChakraPetch-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "ChakraPetch-Light";
+  src: url("/fonts/ChakraPetch-Light.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+.nav-link {
+  font-size: 18px;
+  font-family: "ChakraPetch", sans-serif;
+}
+
+.navItem{
+  list-style: none;
+  padding-left: 20px;
+}
+.navLink img{
+  width: 50px;
+  height: 30px;
+  box-shadow: 1px 2px 3px 0px #888888;
+}
+
+.title_positionen {
+  font-size: 42px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: "ChakraPetch", sans-serif;
+}
+
+.subtitle_positionen {
+  font-size: 24px;
+  line-height: normal;
+  color: #414143;
+  font-family: "ChakraPetch-Light", sans-serif;
+}
+
+.shine {
+  height: 20px;
+  width: 60%;
+  background-image: radial-gradient(
+    farthest-side at 50% -50%,
+    hsla(0, 0%, 0%, 0.1),
+    hsla(0, 0%, 0%, 0)
+  );
+  position: relative;
+}
+
+.shine::before {
+  height: 1px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.75) 50%,
+    hsla(0, 0%, 0%, 0)
+  );
+}
+
+.card {
+  width: 25rem;
+  border: 1px solid #bcbcbc;
+  border-radius: 0;
+  font-size: 64px;
+  font-weight: 600;
+  color: #bcbcbc;
+  font-family: "ChakraPetch", sans-serif;
+}
+
+#card-text {
+  font-size: 32px;
+  font-weight: 600;
+  color: #414143;
+  font-family: "ChakraPetch", sans-serif;
+}
+
+#card-place {
+  font-size: 18px;
+  font-weight: normal;
+  color: #414143;
+  font-family: "ChakraPetch-Light", sans-serif;
+}
+
+.card:hover {
+  border: 1px solid #414143;
+  color: #414143;
+}
+
+.bg_werdegang {
+  background: url("../img/cover_one.jpg") center center;
+  height: 50vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 15rem;
+    border: 1px solid #bcbcbc;
+    border-radius: 0;
+    font-size: 64px;
+    font-weight: 600;
+    color: #bcbcbc;
+  }
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+}

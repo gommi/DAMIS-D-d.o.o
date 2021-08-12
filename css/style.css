@@ -1,0 +1,1244 @@
+@font-face {
+  font-family: "ChakraPetch";
+  src: url("/fonts/ChakraPetch-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "ChakraPetch-Light";
+  src: url("/fonts/ChakraPetch-Light.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Title color*/
+.red_decoration {
+  -webkit-text-decoration: #e2192b solid underline;
+  text-decoration: #e2192b solid underline;
+  font-size: 84px;
+
+  font-weight: 600;
+  font-family: "ChakraPetch", sans-serif;
+  color: #414143;
+}
+
+.red_decoration span {
+  font-weight: 100;
+  font-family: "ChakraPetch-Light", sans-serif;
+  color: #414143;
+}
+
+.yellow_decoration {
+  text-decoration: underline #fec20c;
+
+  font-size: 84px;
+  font-weight: 900;
+  font-family: "ChakraPetch", sans-serif;
+  color: #414143;
+}
+.yellow_decoration span {
+  font-weight: 100;
+  font-family: "ChakraPetch-Light", sans-serif;
+  color: #414143;
+}
+
+/*End*/
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-family: "ChakraPetch", sans-serif;
+}
+
+.navItem{
+  list-style: none;
+  padding-left: 20px;
+}
+
+.navLink img{
+  width: 50px;
+  height: 30px;
+  box-shadow: 1px 2px 3px 0px #888888;
+}
+
+/*slider*/
+
+#banner {
+  min-height: 100vh;
+}
+
+.slide-wrapper {
+  position: relative;
+  top: 0px;
+  bottom: 0;
+}
+
+.carousel-inner {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  min-height: 100vh;
+  top: 0px;
+}
+.carousel-inner {
+  padding-top: 43.25%;
+  display: block;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background: no-repeat center center scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.red-content {
+  min-height: 100vh;
+  position: absolute;
+  padding-left: 80px;
+  padding-top: 100px;
+  top: 0;
+  bottom: 0;
+  width: 65vw;
+  background: rgb(226, 25, 43);
+  color: #fff;
+  background: rgb(255, 255, 255);
+  background: rgba(226, 25, 43, 0.6);
+  clip-path: polygon(0 0, 60% 0, 90% 100%, 0% 100%);
+}
+
+.carousel-control-prev {
+  width: 50px;
+  position: absolute;
+  top: 116px;
+  bottom: -116px;
+}
+.carousel-control-next {
+  width: 50px;
+  position: absolute;
+  top: 116px;
+  bottom: -116px;
+}
+
+.carousel-indicators {
+  margin-bottom: -116px;
+}
+
+.banner_title {
+  font-size: 72px;
+  line-height: 72px;
+  font-family: "ChakraPetch", sans-serif;
+  font-weight: bolder;
+  color: #fff;
+  text-shadow: 3px 3px 10px rgb(34, 34, 34);
+}
+.banner_title span {
+  font-size: 72px;
+  line-height: 72px;
+  font-family: "ChakraPetch", sans-serif;
+  font-weight: bolder;
+  color: #fec20c;
+  text-shadow: 3px 3px 10px rgb(34, 34, 34);
+}
+.banner_text {
+  width: 500px;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "ChakraPetch", sans-serif;
+  color: #fff;
+}
+
+#animation_btn {
+  width: 150px;
+  min-height: 48px;
+  position: relative;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "ChakraPetch", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  margin: 30px 0;
+  margin-left: 5px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+#animation_btn:hover {
+  border: 2px solid #fec20c;
+}
+
+#animation_btn::before {
+  background: #fec20c;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+#animation_btn::before {
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#animation_btn:hover::before {
+  height: 380%;
+}
+
+.animation_btn_two {
+  width: 150px;
+  height: 48px;
+  position: relative;
+  display: block;
+  color: #fec20c;
+  font-size: 18px;
+  line-height: normal;
+  font-family: "ChakraPetch", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  margin: 30px 0;
+  border: 2px solid #fec20c;
+  overflow: hidden;
+  transition: 1s all ease;
+  z-index: 1;
+}
+
+.animation_btn_two:hover {
+  border: 2px solid #e2192b;
+  color: #fff;
+}
+
+.animation_btn_two::before {
+  background: #e2192b;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.animation_btn_two::before {
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.animation_btn_two:hover::before {
+  height: 380%;
+}
+
+/*uber_uns*/
+
+#uber_uns {
+  min-height: 100vh;
+}
+
+.uber_uns_img_one {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/uber_uns_img_one.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.uber_uns_img_two {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/about_us_two.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.uber_uns_img_yellow_logo {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/zuti_logo.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.uber_uns_img_red_logo {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/crveni_logo.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.uber_uns_subtitle {
+  font-family: "Redwing-Light", sans-serif;
+  font-size: 42px;
+  line-height: 48px;
+  color: #fec20c;
+}
+
+.shine {
+  margin-top: 0;
+  height: 20px;
+  width: 90%;
+  background-image: radial-gradient(
+    farthest-side at 50% -50%,
+    hsla(0, 0%, 0%, 0.1),
+    hsla(0, 0%, 0%, 0)
+  );
+  position: relative;
+}
+
+.shine::before {
+  height: 1px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.75) 50%,
+    hsla(0, 0%, 0%, 0)
+  );
+}
+
+.uber_uns_text {
+  font-family: "ChakraPetch-Light", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  color: #414143;
+}
+
+/*Services*/
+
+#services {
+  min-height: 100vh;
+}
+
+.dienstleistungen_text {
+  font-family: "ChakraPetch-Light", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+}
+
+/*CARD CLASS*/
+.hexagon_usluga {
+  width: 10rem;
+}
+#card-title {
+  font-family: "ChakraPetch-Light", sans-serif;
+  font-size: 32px;
+}
+#card-title-two {
+  font-family: "ChakraPetch-Light", sans-serif;
+  font-size: 32px;
+}
+#card-title-three {
+  font-family: "ChakraPetch-Light", sans-serif;
+  font-size: 32px;
+}
+.card-text {
+  font-size: 18px;
+  font-family: "ChakraPetch-Light", sans-serif;
+  line-height: normal;
+}
+
+#warum {
+  min-height: 100vh;
+}
+
+.title_content {
+  font-size: 32px;
+  font-family: "ChakraPetch", sans-serif;
+  color: #414143;
+  font-weight: 600;
+  line-height: normal;
+}
+.text_content {
+  font-size: 18px;
+  font-family: "ChakraPetch-Light", sans-serif;
+  font-weight: 600;
+  color: #414143;
+  line-height: normal;
+}
+/*partner*/
+
+#partner {
+  min-height: 100vh;
+}
+
+#bg_partner {
+  background-image: url("../img/bg_sections.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.partner_img {
+  width: 8rem;
+}
+
+.title_btn {
+  font-size: 32px;
+  font-family: "ChakraPetch", sans-serif;
+  color: #414143;
+  font-weight: 600;
+}
+
+/*projekte*/
+
+#projekte_cont {
+  min-height: 100vh;
+}
+.title_project_content {
+  font-size: 32px;
+  font-family: "ChakraPetch", sans-serif;
+  color: #e2192b;
+  font-weight: 600;
+}
+
+.projekte {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #fec20c;
+}
+
+.projekte .overlay_two {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  visibility: hidden;
+}
+.projekte img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  max-width: none;
+
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.projekte:hover .overlay_two {
+  visibility: visible;
+}
+.projekte:hover img {
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.projekte .title_btn {
+  color: #fff;
+  text-align: center;
+  position: relative;
+
+  overflow: hidden;
+
+  background-color: transparent;
+  font-family: "ChakraPetch-Light", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.projekte .title_btn:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.projekte:hover .title_btn:after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.projekte .title_btn {
+  font-family: "ChakraPetch-Light", sans-serif;
+  color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.projekte:hover .title_btn {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.projekte:hover.title_btn_two {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.submit_btn {
+  width: 200px;
+  height: 48px;
+  background-color: #fec20c;
+  color: #fff;
+  font-weight: 600;
+  font-family: "ChakraPetch-Light", sans-serif;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "ChakraPetch-Light", sans-serif;
+  color: #414143;
+}
+
+/*Responsive*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .nav-item {
+    margin-left: 0px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-item {
+    margin-left: 0px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+  /*Title color*/
+  .red_background {
+    height: 80px;
+  }
+
+  .yellow_background {
+    height: 80px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+  .banner_title {
+    font-size: 64px;
+    line-height: 48px;
+  }
+  .banner_title span {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .banner_text {
+    width: 430px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  /*End*/
+  .uber_uns_img_one {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_two {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_yellow_logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_red_logo {
+    width: 150px;
+    height: 150px;
+  }
+  .uber_uns_title {
+    font-size: 48px;
+    text-decoration: underline #fec20c;
+  }
+
+  .uber_uns_text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  /*partner*/
+  #partner_img {
+    width: 10rem;
+  }
+  /*projekte*/
+  .projekte {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+  /*Title color*/
+  .red_background {
+    height: 60px;
+  }
+
+  .yellow_background {
+    height: 60px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+  /*End*/
+
+  .navbar-brand img {
+    width: auto;
+    height: 50px;
+  }
+
+  /*banner und slider*/
+  .carousel-inner {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    height: 100vh;
+    top: 0;
+  }
+  .carousel-inner {
+    padding-top: 43.25%;
+    display: block;
+  }
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .red-content {
+    width: 100vw;
+  }
+  .banner_title {
+    font-size: 64px;
+    line-height: 48px;
+  }
+  .banner_title span {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .banner_text {
+    width: 430px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .btn_banner {
+    width: 150px;
+    font-size: 24px;
+  }
+  /*END*/
+  .uber_uns_img_one {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_two {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_yellow_logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_red_logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_title {
+    font-size: 48px;
+    text-decoration: underline #fec20c;
+  }
+
+  .uber_uns_subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .uber_uns_text {
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 48px;
+  }
+  .shine {
+    margin-bottom: 0;
+  }
+  /*partner*/
+
+  #partner_img {
+    width: 10rem;
+  }
+  /*projekte*/
+  .projekte {
+    width: 200px;
+    height: 200px;
+  }
+  #card-title {
+    font-size: 24px;
+  }
+
+  #card-title-two {
+    font-size: 24px;
+  }
+
+  #card-title-three {
+    font-size: 24px;
+  }
+  .card-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+  /*Title color*/
+  .red_background {
+    height: 60px;
+  }
+
+  .yellow_background {
+    height: 60px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+  /*End*/
+
+  .navbar-brand img {
+    width: auto;
+    height: 50px;
+  }
+  /*banner und slider*/
+  .carousel-inner {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    height: 100vh;
+    top: 80px;
+  }
+  .carousel-inner {
+    padding-top: 43.25%;
+    display: block;
+  }
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .red-content {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  .banner_title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .banner_title span {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .banner_text {
+    width: 430px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  #animation_btn {
+    width: 150px;
+    min-height: 48px;
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin: 30px 0;
+
+    border: 2px solid #fff;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+
+  #animation_btn:hover {
+    border: 2px solid #fec20c;
+  }
+
+  #animation_btn::before {
+    background: #fec20c;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+
+  #animation_btn::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  #animation_btn:hover::before {
+    height: 380%;
+  }
+
+  #animation_btn_two {
+    width: 150px;
+    height: 48px;
+    position: relative;
+    display: block;
+    color: #fec20c;
+    font-size: 18px;
+    line-height: normal;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin: 30px 0;
+    border: 2px solid #fec20c;
+    overflow: hidden;
+    transition: 1s all ease;
+    z-index: 1;
+  }
+
+  #animation_btn_two:hover {
+    border: 2px solid #e2192b;
+    color: #fff;
+  }
+
+  #animation_btn_two::before {
+    background: #e2192b;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+
+  #animation_btn_two::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  #animation_btn_two:hover::before {
+    height: 380%;
+  }
+
+  /*END*/
+  .uber_uns_img_one {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_two {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_yellow_logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uber_uns_img_red_logo {
+    width: 150px;
+    height: 150px;
+  }
+  .uber_uns_title {
+    font-size: 48px;
+    text-decoration: underline #fec20c;
+  }
+
+  .uber_uns_text {
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 48px;
+  }
+  #bg_partner {
+    background-image: url("../img/bg_small_sections.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /*partner*/
+
+  #partner_img {
+    width: 10rem;
+  }
+
+  /*projekte*/
+  .projekte {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navItem{
+    list-style: none;
+    padding-left: 0px;
+  }
+  #banner {
+    min-height: 100vh;
+  }
+  .navbar-brand img {
+    width: auto;
+    height: 50px;
+  }
+  /*Title color*/
+  .red_decoration {
+    text-decoration: underline #e2192b;
+    font-size: 42px;
+    font-family: "Redwing-Medium", sans-serif;
+  }
+
+  .yellow_decoration {
+    font-size: 42px;
+    font-family: "Redwing-Medium", sans-serif;
+  }
+  .yellow_decoration span {
+    font-size: 42px;
+    font-family: "Redwing-Light", sans-serif;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+  .title_content {
+    font-size: 24px;
+  }
+  /*End*/
+  /*banner und slider*/
+  .carousel-inner {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    min-height: 100vh;
+    top: 0px;
+  }
+  .carousel-inner {
+    padding-top: 43.25%;
+    display: block;
+  }
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-height: 100vh;
+  }
+
+  .red-content {
+    width: 100vw;
+    min-height: 100vh;
+    padding-left: 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .banner_title {
+    padding-bottom: 30px;
+    font-size: 42px;
+    line-height: 42px;
+    padding-top: 160px;
+  }
+  .banner_title span {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  #animation_btn {
+    width: 250px;
+    min-height: 48px;
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 0;
+    border: 2px solid #fff;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+
+  #animation_btn:hover {
+    border: 2px solid #fec20c;
+  }
+
+  #animation_btn::before {
+    background: #fec20c;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+
+  #animation_btn::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  #animation_btn:hover::before {
+    height: 480%;
+  }
+
+  #animation_btn_two {
+    width: 250px;
+    height: 48px;
+    position: relative;
+    display: block;
+    color: #fec20c;
+    font-size: 18px;
+    line-height: normal;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin: 30px 0;
+    border: 2px solid #fec20c;
+    overflow: hidden;
+    transition: 1s all ease;
+    z-index: 1;
+  }
+
+  #animation_btn_two:hover {
+    border: 2px solid #e2192b;
+    color: #fff;
+  }
+
+  #animation_btn_two::before {
+    background: #e2192b;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+
+  #animation_btn_two::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  #animation_btn_two:hover::before {
+    height: 480%;
+  }
+
+  /*END*/
+  .uber_uns_img_one {
+    width: 100px;
+    height: 100px;
+  }
+
+  .uber_uns_img_two {
+    width: 100px;
+    height: 100px;
+  }
+
+  .uber_uns_img_yellow_logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .uber_uns_img_red_logo {
+    width: 100px;
+    height: 100px;
+  }
+  .uber_uns_title {
+    font-size: 42px;
+    text-decoration: underline #fec20c;
+  }
+
+  .uber_uns_text {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 32px;
+  }
+  .uber_uns_subtitle {
+    font-family: "Redwing-Light", sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    color: #fec20c;
+  }
+
+  #bg_partner {
+    background-image: url("../img/bg_small_sections_two.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*partner*/
+
+  #partner_img {
+    width: 10rem;
+  }
+
+  /*projekte*/
+  .projekte {
+    width: 280px;
+    height: 280px;
+  }
+  .title_project_content {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  #uber_uns {
+    min-height: 50vh;
+  }
+  #partner {
+    min-height: 70vh;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  #uber_uns {
+    min-height: 60vh;
+  }
+  #services {
+    min-height: 75vh;
+  }
+  #warum {
+    min-height: 50vh;
+  }
+  #partner {
+    min-height: 60vh;
+  }
+  #projekte_cont {
+    min-height: 60vh;
+  }
+}
